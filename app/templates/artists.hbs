@@ -1,8 +1,8 @@
 TEST
 <ul>
   {{#each model as |artist|}}
-    <li>
-      {{link-to artist.fullName 'artists.artist' artist class="artist"}}
+    <li class='artist'>
+      {{link-to artist.fullName 'artists.artist' artist}}
     </li>
   {{/each}}
 </ul>
