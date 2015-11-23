@@ -1,6 +1,9 @@
 TEST
-{{#each model as |artist|}}
-  {{artist.name}}
-  ping
-{{/each}}
+<ul>
+  {{#each model as |artist|}}
+    <li>
+      {{link-to artist.fullName 'artists.artist' artist class="artist"}}
+    </li>
+  {{/each}}
+</ul>
 {{outlet}}
